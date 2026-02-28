@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html1 lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <tittle>Formularios</tittle>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form action="#" methos="get">
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" name="nombre" id="nombreID" placeholder="Pendejo">
+            <br>
+
+            <label for="pwd">Contraseña:</label>
+            <input type="password" name="pwd" id="pwdID" required>
+            <br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="1" max="200">
+            <br>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fechaID">
+            <br>
+
+            <label for="fechaHora">Fecha y Hora</label>
+            <input type="datetime-local" name="fechaHora" id="fechaHoraID">
+            <br>
+
+            <label for="color">Color</label>
+            <input type="color" name="color" id="colorID">
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emailID" placeholder="usuario@dominio.com">
+            <br>
+
+            <label for="mes">Mes</label>
+            <input type="month" name="mes" id="mesID">
+            <br>
+
+            <label for="semana">Semana</label>
+            <input type="week" name="semana" id="semanaID">
+            <br>
+
+            <label for="archivo">Archivo</label>
+            <input type="file" name="archivo" id="archivoID">
+            <br>
+
+            <label for="check">Checkbox</label>
+            <label>
+                <input type="checkbox" name="ejemploCheck1"> Opción 1
+            </label>
+            <label>
+                <input type="checkbox" name="ejemploCheck2" checked> Opción 2
+            </label>
+            <br>
+
+            <label for="radio">Radiobutton</label>
+            <label>
+                <input type="radio" name="radio" value="1"> Opción 1
+            </label>
+            <label>
+                <input type="radio" name="radio" value="2"> Opción 2
+            </label>
+            <br>
+
+            <label for="ciudad">Ciudad</label>
+            <select name="ciudad" id="ciudadID">
+                <option value="1" selected>Tunja</option>
+                <option value="2">Duitama</option>
+                <option value="3">Sogamoso</option>
+            </select>
+            <br>
+
+            <label for="obsercaiones">Observaciones</label>
+            <textarea name="obsercaiones" id="obsercaionesID" cols="120" rows="5"></textarea>
+            <br>
+
+            <input type="submit" value="Aceptar">
+            <!--
+                submit = buton para programar con JS
+                reset = reiniciar datos a 0
+                submit = enviar los datos
+            -->
+            <button type="submit">Aceptar</button>
+        </form>
+    </body>
+</html1>
