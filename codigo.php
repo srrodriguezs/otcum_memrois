@@ -1,4 +1,9 @@
 <?php
+/**
+ * Ejecutar:
+ * 
+ */
+
 echo 'hola mundo';
 
 $nombre = null;
