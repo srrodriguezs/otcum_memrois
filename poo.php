@@ -1,10 +1,15 @@
 <?php
-
+/**
+ * Ejecutar:
+ * 1. Abrir cmd
+ * 1. cd ruta/del/proyecto 
+ * 3. c:\xampp\php\php.exe nombre_del_proyecto.php
+ */
 abstract class Figura {
     public abstract function area();
 
     public function getAreaMsg() {
-        return "El área del cuadrado es: " . $this->area() . "\n";
+        return "El área de la figura es: " . $this->area() . "\n";
     }
 }
 
@@ -54,6 +59,24 @@ class Rectangulo extends Figura implements IFigura {
     }
 }
 
+class Triangulo extends Figura implements IFigura {
+    private $base = 0;  
+    private $altura = 0;
+
+    public function __construct($base, $altura) {
+        $this->base = $base;
+        $this->altura = $altura;
+    }
+
+    public function area() {
+        return ($this->base * $this->altura) / 2;
+    }
+
+    public function toString() {
+        return "\nEl triangulo es de " . $this->base . " x " . $this->altura;
+    }
+}
+
 $cuadrado1 = new Cuadrado();
 $cuadrado1->setArista(5);
 echo "\nEl cuadrado tiene una arista de: " . $cuadrado1->getArista() . "\n";
@@ -63,3 +86,7 @@ echo $cuadrado1->getAreaMsg() . "\n";
 $rectangulo1 = new Rectangulo(10, 15);
 echo $rectangulo1->toString() . "\n";
 echo $rectangulo1->getAreaMsg() . "\n";
+
+$triangulo1 = new Triangulo(10, 5);
+echo $triangulo1->toString() . "\n";
+echo $triangulo1->getAreaMsg() . "\n";

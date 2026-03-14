@@ -1,7 +1,8 @@
 <?php
 /**
  * Ejecutar:
- * 
+ * 1. cd ruta/del/proyecto 
+ * 2. c:\xampp\php\php.exe nombre_del_proyecto.php
  */
 
 echo 'hola mundo';
